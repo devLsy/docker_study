@@ -1,0 +1,1 @@
+# nginx를 가져와서 호스트 컴퓨터의 index.html과 nginx 설정파일을 nginx 컨테이너에 복사 후 실행하는 예제

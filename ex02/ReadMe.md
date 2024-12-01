@@ -1,0 +1,1 @@
+# 우분투를 가져와서 nginx 설치 후 실행경로 설정 및 호스트 컴퓨터의 index.html을 nginx 컨테이너의 index.html에 복사 후 그걸 실행하는 예제

@@ -1,0 +1,16 @@
+services:
+# db라는 이름은 내맘대로 그 안의 image, restart 등은 수정 불가
+  db:
+    image: mysql  
+    restart: always
+    volumes:
+    # 호스트 볼륨 연결
+      - ./mysql-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=rootdb
+    ports:
+      - "3309:3306"
+# 위에서 설정한 볼륨 연결
+volumes:
+  mysql-compose-volume:
